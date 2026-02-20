@@ -137,6 +137,7 @@
       font-size: 11.5px;
       letter-spacing: .1em;
       text-transform: uppercase;
+      white-space: nowrap;
       transition: opacity .2s ease;
     }
     nav a::after {
@@ -188,13 +189,14 @@
       color: var(--text);
     }
     .nav-cta {
-      border-color: rgba(15,47,33,.22);
-      background: linear-gradient(180deg, #fff, #f3f3ee);
-      font-size: 11.5px;
-      letter-spacing: .12em;
+      border-color: rgba(185,146,90,.65);
+      background: linear-gradient(135deg, #ead7b7, #c79c62);
+      color: #14261d;
+      font-size: 11px;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      padding: 9px 14px;
-      box-shadow: 0 10px 20px rgba(7,23,16,.1);
+      padding: 10px 14px;
+      box-shadow: 0 10px 22px rgba(7,23,16,.16);
     }
 
     /* Mobile nav toggle */
@@ -483,7 +485,7 @@
     }
 
     .hero-note {
-      margin: 12px auto 0;
+      margin: 20px auto 0;
       font-size: 13px;
       letter-spacing: .04em;
       text-transform: uppercase;
@@ -569,14 +571,15 @@
     }
 
     .hero-bridge {
-      height: 56px;
+      height: 44px;
       margin-top: -8px;
       background: linear-gradient(180deg, rgba(8,24,16,.24), rgba(246,245,240,.86) 55%, rgba(246,245,240,1));
     }
 
     .trust-strip {
       position:relative;
-      margin-top:-34px;
+      padding: 0 0 26px !important;
+      margin-top:-12px;
       z-index:3;
     }
     .trust-strip .container {
@@ -584,7 +587,7 @@
       border:1px solid #e4e1d8;
       border-radius: 24px;
       box-shadow: 0 18px 46px rgba(10,26,20,.16);
-      padding: 12px 16px;
+      padding: 14px 16px;
       display:grid;
       gap:10px;
       grid-template-columns:1fr;
@@ -703,11 +706,11 @@
     .journey-shell {
       position: relative;
       border-radius: 28px;
-      border: 1px solid rgba(12,34,24,.12);
-      background: linear-gradient(140deg, #0d1a12, #123626 62%, #174934);
-      color: #e8f1eb;
+      border: 1px solid rgba(22,58,42,.14);
+      background: linear-gradient(140deg, #f6f7f2, #eef3ec 58%, #e7efe8);
+      color: #20322b;
       padding: clamp(22px, 3.6vw, 34px);
-      box-shadow: 0 26px 70px rgba(7,20,14,.44);
+      box-shadow: 0 22px 58px rgba(7,20,14,.14);
       overflow: hidden;
     }
 
@@ -717,7 +720,7 @@
       inset: -30% -20% auto auto;
       width: 360px;
       height: 360px;
-      background: radial-gradient(circle, rgba(201,176,138,.24), transparent 62%);
+      background: radial-gradient(circle, rgba(201,176,138,.2), transparent 62%);
       pointer-events: none;
     }
 
@@ -730,20 +733,20 @@
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: .16em;
-      color: #c9d9ce;
+      color: #4f655b;
       font-weight: 700;
     }
 
     .journey-top h2 {
       margin: 0 0 10px;
       font-size: clamp(29px, 4vw, 46px);
-      color: #f2f8f4;
+      color: #173428;
     }
 
     .journey-top p {
       margin: 0;
       max-width: 780px;
-      color: #d7e6dc;
+      color: #344840;
     }
 
     .journey-grid {
@@ -760,11 +763,11 @@
 
     .journey-step {
       position: relative;
-      background: rgba(6,18,12,.45);
-      border: 1px solid rgba(233,241,236,.18);
+      background: rgba(255,255,255,.76);
+      border: 1px solid rgba(20,50,36,.14);
       border-radius: 18px;
       padding: 16px 14px 14px;
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(3px);
     }
 
     .journey-step::before {
@@ -778,7 +781,7 @@
       border-radius: 999px;
       background: rgba(201,176,138,.24);
       border: 1px solid rgba(201,176,138,.58);
-      color: #f4efe6;
+      color: #173428;
       font-weight: 700;
       font-size: 13px;
       margin-bottom: 8px;
@@ -786,13 +789,13 @@
 
     .journey-step h3 {
       margin: 0 0 7px;
-      color: #f3f8f5;
+      color: #173428;
       font-size: 22px;
     }
 
     .journey-step p {
       margin: 0;
-      color: #d4e2d9;
+      color: #3a4d45;
     }
 
     .journey-actions {
@@ -803,12 +806,12 @@
     }
 
     .journey-actions .btn-ghost {
-      border-color: rgba(233,241,236,.55);
-      color: #f3f8f5;
-      background: rgba(255,255,255,.06);
+      border-color: rgba(20,50,36,.28);
+      color: #173428;
+      background: rgba(255,255,255,.8);
     }
 
-    .journey-actions .btn-ghost:hover { background: rgba(255,255,255,.14); }
+    .journey-actions .btn-ghost:hover { background: rgba(255,255,255,.98); }
     #book .card-book,
     #faq .container,
     #contact form {
@@ -1168,7 +1171,26 @@
     .experiences-actions { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
     .privacy-note { font-size:12px; color:var(--muted); }
     .score-value { font-weight:700; }
-    .guide-links { margin-top:12px; }
+    .guide-links {
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      line-height: 1.4;
+    }
+    .guide-links a {
+      display:inline-flex;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid #d8dfd8;
+      background:#fff;
+      color:#1c3228;
+      font-size:12px;
+      letter-spacing:.02em;
+      white-space: nowrap;
+    }
     .footer-meta {
       font-size:14px;
       opacity:.9;
@@ -1564,7 +1586,7 @@
           <li><a href="#dining" data-i18n="nav.dining">Dining</a></li>
           <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
           <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
-          <li><a href="#galle-guide" data-i18n="nav.guide">Galle Guide</a></li>
+          <li><a href="/boutique-hotel-galle/" data-i18n="nav.guide">Guides</a></li>
           <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
           <li><a href="#location" data-i18n="nav.location">Location</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
@@ -1604,7 +1626,7 @@
             <a class="btn btn-primary" href="#availability" data-i18n="hero.cta1">Check availability</a>
             <a class="btn btn-ghost hero-secondary" href="#rooms" data-i18n="hero.cta2">Explore the rooms</a>
           </div>
-                  <p class="hero-note"><span data-i18n="hero.noteLabel">Direct booking promise:</span> <strong data-i18n="hero.noteStrong">Best rate on the official site.</strong></p>
+          <p class="hero-note"><span data-i18n="hero.noteLabel">Direct booking promise:</span> <strong data-i18n="hero.noteStrong">Best rate on the official site.</strong></p>
           <p class="hero-signature" data-i18n="hero.signature">"Raw luxury in nature, shaped around you."</p>
         </div>
       </div>
@@ -1761,12 +1783,12 @@
       <div class="journey-top">
         <p class="journey-kicker" data-i18n="journey.kicker">Guest journey</p>
         <h2 data-i18n="journey.h2">How your Jungle Loft stay unfolds</h2>
-        <p data-i18n="journey.sub">A high-touch, low-friction journey from arrival to departure, crafted for privacy, calm and meaningful local moments.</p>
+        <p data-i18n="journey.sub">A clear, relaxed guest flow from arrival to checkout, with optional experiences available when you want them.</p>
       </div>
       <div class="journey-grid">
         <article class="journey-step">
           <h3 data-i18n="journey.step1h3">Before arrival</h3>
-          <p data-i18n="journey.step1p">Transfer, dietary preferences and first-day rhythm are coordinated with you in advance.</p>
+          <p data-i18n="journey.step1p">Arrival time, transfer and check-in details are coordinated in advance for a smooth start.</p>
         </article>
         <article class="journey-step">
           <h3 data-i18n="journey.step2h3">During your stay</h3>
@@ -2337,7 +2359,7 @@
           dining: "Dining",
           experiences: "Experiences",
           gallery: "Gallery",
-          guide: "Galle Guide",
+          guide: "Guides",
           journal: "Journal",
           location: "Location",
           contact: "Contact",
@@ -2587,9 +2609,9 @@
         journey: {
           kicker: "Guest journey",
           h2: "How your Jungle Loft stay unfolds",
-          sub: "A high-touch, low-friction journey from arrival to departure, crafted for privacy, calm and meaningful local moments.",
+          sub: "A clear, relaxed guest flow from arrival to checkout, with optional experiences available when you want them.",
           step1h3: "Before arrival",
-          step1p: "Transfer, dietary preferences and first-day rhythm are coordinated with you in advance.",
+          step1p: "Arrival time, transfer and check-in details are coordinated in advance for a smooth start.",
           step2h3: "During your stay",
           step2p: "Your days combine pool calm, curated experiences and flexible planning in your own pace.",
           step3h3: "Departure, simplified",
@@ -2630,7 +2652,7 @@
           dining: "Restaurant",
           experiences: "Erlebnisse",
           gallery: "Galerie",
-          guide: "Galle Guide",
+          guide: "Guides",
           journal: "Journal",
           location: "Lage",
           contact: "Kontakt",
@@ -2880,9 +2902,9 @@
         journey: {
           kicker: "Guest Journey",
           h2: "So entfaltet sich Ihr Aufenthalt im Jungle Loft",
-          sub: "Eine hochwertige, reibungsarme Guest Journey von der Ankunft bis zur Abreise, gestaltet fuer Privatsphaere und entspannten Luxus.",
+          sub: "Ein klarer, entspannter Ablauf von der Ankunft bis zum Check-out, mit optionalen Erlebnissen nach Wunsch.",
           step1h3: "Vor der Ankunft",
-          step1p: "Transfer, Ernaehrungswuensche und Ihr erster Tagesrhythmus werden vorab mit Ihnen abgestimmt.",
+          step1p: "Ankunftszeit, Transfer und Check-in-Details werden vorab abgestimmt, damit alles reibungslos startet.",
           step2h3: "Waehrend des Aufenthalts",
           step2p: "Ihre Tage verbinden Pool-Ruhe, kuratierte Erlebnisse und flexible Planung in Ihrem Tempo.",
           step3h3: "Abreise, vereinfacht",
@@ -2923,7 +2945,7 @@
           dining: "Ресторан",
           experiences: "Впечатления",
           gallery: "Галерея",
-          guide: "Гид по Галле",
+          guide: "Гайды",
           journal: "Журнал",
           location: "Расположение",
           contact: "Контакты",
@@ -3173,9 +3195,9 @@
         journey: {
           kicker: "Guest journey",
           h2: "Как проходит ваш отдых в Jungle Loft",
-          sub: "Продуманный путь гостя от приезда до выезда: приватность, спокойствие и локальные впечатления без лишней суеты.",
+          sub: "Понятный и спокойный путь от приезда до выезда, с опциональными впечатлениями по вашему желанию.",
           step1h3: "До приезда",
-          step1p: "Трансфер, предпочтения по питанию и ритм первого дня согласуются заранее.",
+          step1p: "Время прибытия, трансфер и детали check-in согласуются заранее для спокойного начала отдыха.",
           step2h3: "Во время проживания",
           step2p: "Ваши дни сочетают спокойствие у бассейна, curated-впечатления и гибкое планирование в вашем темпе.",
           step3h3: "Выезд без стресса",
