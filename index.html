@@ -17,6 +17,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thejungleloftgalle.com/" />
   <meta property="og:image" content="https://thejungleloftgalle.com/assets/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://thejungleloftgalle.com/assets/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The Jungle Loft in Galle, Sri Lanka" />
   <meta property="og:site_name" content="The Jungle Loft – Galle" />
   <meta property="og:locale" content="en_US" />
 
@@ -24,8 +29,11 @@
   <meta name="twitter:title" content="The Jungle Loft – Boutique Hotel in Galle, Sri Lanka" />
   <meta name="twitter:description" content="A 4-room luxury boutique hotel in Galle: two villas & two bungalows wrapped in greenery, with a serene jungle pool." />
   <meta name="twitter:image" content="https://thejungleloftgalle.com/assets/og-image.jpg" />
+  <meta name="twitter:image:alt" content="The Jungle Loft in Galle, Sri Lanka" />
 
   <meta name="theme-color" content="#0e4f33" />
+  <link rel="icon" href="/assets/og-image.jpg" type="image/jpeg" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/assets/og-image.jpg" />
   <link rel="alternate" hreflang="x-default" href="https://thejungleloftgalle.com/" />
   <link rel="alternate" hreflang="en" href="https://thejungleloftgalle.com/" />
   <link rel="alternate" hreflang="de" href="https://thejungleloftgalle.com/" />
@@ -485,7 +493,7 @@
     }
 
     .hero-note {
-      margin: 32px auto 0;
+      margin: 44px auto 0;
       padding-top: 8px;
       font-size: 13px;
       letter-spacing: .04em;
@@ -707,11 +715,11 @@
     .journey-shell {
       position: relative;
       border-radius: 28px;
-      border: 1px solid rgba(22,58,42,.14);
-      background: linear-gradient(140deg, #f6f7f2, #eef3ec 58%, #e7efe8);
-      color: #20322b;
+      border: 1px solid rgba(218,230,222,.24);
+      background: linear-gradient(140deg, #204233, #2a5a46 58%, #30614b);
+      color: #eaf2ed;
       padding: clamp(22px, 3.6vw, 34px);
-      box-shadow: 0 22px 58px rgba(7,20,14,.14);
+      box-shadow: 0 22px 58px rgba(7,20,14,.26);
       overflow: hidden;
     }
 
@@ -721,7 +729,7 @@
       inset: -30% -20% auto auto;
       width: 360px;
       height: 360px;
-      background: radial-gradient(circle, rgba(201,176,138,.2), transparent 62%);
+      background: radial-gradient(circle, rgba(201,176,138,.22), transparent 62%);
       pointer-events: none;
     }
 
@@ -734,20 +742,20 @@
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: .16em;
-      color: #4f655b;
+      color: #d0e3d8;
       font-weight: 700;
     }
 
     .journey-top h2 {
       margin: 0 0 10px;
       font-size: clamp(29px, 4vw, 46px);
-      color: #173428;
+      color: #f3f8f5;
     }
 
     .journey-top p {
       margin: 0;
       max-width: 780px;
-      color: #344840;
+      color: #d6e6dc;
     }
 
     .journey-grid {
@@ -764,8 +772,8 @@
 
     .journey-step {
       position: relative;
-      background: rgba(255,255,255,.76);
-      border: 1px solid rgba(20,50,36,.14);
+      background: rgba(10,28,20,.28);
+      border: 1px solid rgba(233,241,236,.22);
       border-radius: 18px;
       padding: 16px 14px 14px;
       backdrop-filter: blur(3px);
@@ -782,7 +790,7 @@
       border-radius: 999px;
       background: rgba(201,176,138,.24);
       border: 1px solid rgba(201,176,138,.58);
-      color: #173428;
+      color: #f4efe6;
       font-weight: 700;
       font-size: 13px;
       margin-bottom: 8px;
@@ -790,13 +798,13 @@
 
     .journey-step h3 {
       margin: 0 0 7px;
-      color: #173428;
+      color: #f2f8f4;
       font-size: 22px;
     }
 
     .journey-step p {
       margin: 0;
-      color: #3a4d45;
+      color: #d3e2d9;
     }
 
     .journey-actions {
@@ -807,12 +815,12 @@
     }
 
     .journey-actions .btn-ghost {
-      border-color: rgba(20,50,36,.28);
-      color: #173428;
-      background: rgba(255,255,255,.8);
+      border-color: rgba(233,241,236,.5);
+      color: #f3f8f5;
+      background: rgba(255,255,255,.08);
     }
 
-    .journey-actions .btn-ghost:hover { background: rgba(255,255,255,.98); }
+    .journey-actions .btn-ghost:hover { background: rgba(255,255,255,.14); }
     #book .card-book,
     #faq .container,
     #contact form {
@@ -1501,24 +1509,17 @@
       gap: 18px;
       grid-template-columns: 1fr;
     }
-
     @media (min-width: 980px) {
-      .editorial-grid { grid-template-columns: repeat(12, 1fr); }
+      .editorial-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
     .editorial-card {
       position: relative;
-      grid-column: span 4;
       border-radius: var(--radius-xl);
       border: 1px solid #e3e0d7;
       background: linear-gradient(160deg, #ffffff, #f3f4ef);
       box-shadow: 0 20px 52px rgba(10,26,20,.12);
       padding: clamp(18px, 2.4vw, 24px);
-    }
-    .editorial-card.featured {
-      grid-column: span 8;
-      background: linear-gradient(160deg, #ffffff, #f6f2e8);
-      border-color: #e0d2b9;
     }
 
     .editorial-card::before {
@@ -1545,18 +1546,11 @@
       font-size: clamp(22px, 2vw, 28px);
       line-height: 1.15;
     }
-    .editorial-card.featured h3 {
-      font-size: clamp(30px, 3vw, 40px);
-      line-height: 1.08;
-    }
 
     .editorial-card p {
       margin: 0;
       color: #2f3f38;
       line-height: 1.7;
-    }
-    .editorial-card.featured p {
-      font-size: 16px;
     }
 
     .editorial-quote {
@@ -2084,7 +2078,7 @@
             <li data-i18n="guide.card2li3">Book airport transfer in advance for a smoother arrival.</li>
             <li data-i18n="guide.card2li4">In the dry season (roughly Dec-Apr), book boutique hotels early.</li>
           </ul>
-          <p class="guide-links" data-i18n-html="guide.resources">Useful resources: <a href="/boutique-hotel-galle/index.html">Boutique Hotel in Galle Guide</a> · <a href="/hotel-near-galle-fort/index.html">Hotel Near Galle Fort</a> · <a href="/things-to-do-in-galle/index.html">Things to Do in Galle</a> · <a href="/luxury-jungle-stay-sri-lanka/index.html">Luxury Jungle Stay Sri Lanka</a> · <a href="/honeymoon-hotel-galle/index.html">Honeymoon Hotel in Galle</a> · <a href="/best-time-to-visit-galle/index.html">Best Time to Visit Galle</a> · <a href="https://www.lonelyplanet.com/sri-lanka/galle" target="_blank" rel="noopener">Galle on Lonely Planet</a> · <a href="https://www.srilanka.travel/" target="_blank" rel="noopener">Sri Lanka Tourism</a>.</p>
+          <p class="guide-links" data-i18n-html="guide.resources"><a href="/boutique-hotel-galle/index.html">Boutique Hotel in Galle Guide</a> · <a href="/hotel-near-galle-fort/index.html">Hotel Near Galle Fort</a> · <a href="/things-to-do-in-galle/index.html">Things to Do in Galle</a> · <a href="/luxury-jungle-stay-sri-lanka/index.html">Luxury Jungle Stay Sri Lanka</a> · <a href="/honeymoon-hotel-galle/index.html">Honeymoon Hotel in Galle</a> · <a href="/best-time-to-visit-galle/index.html">Best Time to Visit Galle</a> · <a href="https://www.lonelyplanet.com/sri-lanka/galle" target="_blank" rel="noopener">Galle on Lonely Planet</a> · <a href="https://www.srilanka.travel/" target="_blank" rel="noopener">Sri Lanka Tourism</a></p>
         </article>
       </div>
     </div>
@@ -2097,7 +2091,7 @@
       <h2 class="section-title reveal" data-i18n="editorial.h2">Stories from a slower luxury in Galle</h2>
       <p class="section-sub reveal" data-i18n="editorial.sub">A more personal look at how days unfold at The Jungle Loft: slow mornings, curated dining and private concierge moments around Galle.</p>
       <div class="editorial-grid">
-        <article class="editorial-card featured reveal">
+        <article class="editorial-card reveal">
           <p class="editorial-meta" data-i18n="editorial.card1meta">A Day at Jungle Loft</p>
           <h3 data-i18n="editorial.card1h3">From sunrise tea to candle-lit dinner</h3>
           <p data-i18n="editorial.card1p">The day starts with birdsong and breakfast by the pool, flows into beach or fort hours, and ends with private dining under warm evening light.</p>
@@ -2524,7 +2518,7 @@
           card2li2: "Visit Galle Fort in the late afternoon and stay for sunset.",
           card2li3: "Book airport transfer in advance for a smoother arrival.",
           card2li4: "In the dry season (roughly Dec-Apr), book boutique hotels early.",
-          resources: "Useful resources: <a href=\"/boutique-hotel-galle/index.html\">Boutique Hotel in Galle Guide</a> · <a href=\"/hotel-near-galle-fort/index.html\">Hotel Near Galle Fort</a> · <a href=\"/things-to-do-in-galle/index.html\">Things to Do in Galle</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Luxury Jungle Stay Sri Lanka</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Honeymoon Hotel in Galle</a> · <a href=\"/best-time-to-visit-galle/index.html\">Best Time to Visit Galle</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle on Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Sri Lanka Tourism</a>."
+          resources: "<a href=\"/boutique-hotel-galle/index.html\">Boutique Hotel in Galle Guide</a> · <a href=\"/hotel-near-galle-fort/index.html\">Hotel Near Galle Fort</a> · <a href=\"/things-to-do-in-galle/index.html\">Things to Do in Galle</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Luxury Jungle Stay Sri Lanka</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Honeymoon Hotel in Galle</a> · <a href=\"/best-time-to-visit-galle/index.html\">Best Time to Visit Galle</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle on Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Sri Lanka Tourism</a>"
         },
         editorial: {
           kicker: "The Jungle Loft Journal",
@@ -2817,7 +2811,7 @@
           card2li2: "Besuchen Sie Galle Fort am späten Nachmittag und bleiben Sie bis zum Sonnenuntergang.",
           card2li3: "Buchen Sie den Flughafentransfer vorab für eine entspannte Anreise.",
           card2li4: "In der trockeneren Saison (ca. Dez-Apr) Boutiquehotels früh reservieren.",
-          resources: "Nützliche Links: <a href=\"/boutique-hotel-galle/index.html\">Boutique-Hotel-Guide für Galle</a> · <a href=\"/hotel-near-galle-fort/index.html\">Hotel nahe Galle Fort</a> · <a href=\"/things-to-do-in-galle/index.html\">Aktivitäten in Galle</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Luxuriöser Jungle Stay Sri Lanka</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Honeymoon-Hotel in Galle</a> · <a href=\"/best-time-to-visit-galle/index.html\">Beste Reisezeit für Galle</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle bei Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Sri Lanka Tourism</a>."
+          resources: "<a href=\"/boutique-hotel-galle/index.html\">Boutique-Hotel-Guide für Galle</a> · <a href=\"/hotel-near-galle-fort/index.html\">Hotel nahe Galle Fort</a> · <a href=\"/things-to-do-in-galle/index.html\">Aktivitäten in Galle</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Luxuriöser Jungle Stay Sri Lanka</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Honeymoon-Hotel in Galle</a> · <a href=\"/best-time-to-visit-galle/index.html\">Beste Reisezeit für Galle</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle bei Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Sri Lanka Tourism</a>"
         },
         editorial: {
           kicker: "The Jungle Loft Journal",
@@ -3110,7 +3104,7 @@
           card2li2: "Посетите форт Галле ближе к вечеру и останьтесь на закат.",
           card2li3: "Заранее бронируйте трансфер из аэропорта для комфортного приезда.",
           card2li4: "В более сухой сезон (примерно декабрь-апрель) бутик-отели лучше бронировать заранее.",
-          resources: "Полезные ссылки: <a href=\"/boutique-hotel-galle/index.html\">Гид по бутик-отелям Галле</a> · <a href=\"/hotel-near-galle-fort/index.html\">Отель рядом с фортом Галле</a> · <a href=\"/things-to-do-in-galle/index.html\">Чем заняться в Галле</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Роскошный отдых в джунглях Шри-Ланки</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Отель для медового месяца в Галле</a> · <a href=\"/best-time-to-visit-galle/index.html\">Лучшее время для поездки в Галле</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle на Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Туризм Шри-Ланки</a>."
+          resources: "<a href=\"/boutique-hotel-galle/index.html\">Гид по бутик-отелям Галле</a> · <a href=\"/hotel-near-galle-fort/index.html\">Отель рядом с фортом Галле</a> · <a href=\"/things-to-do-in-galle/index.html\">Чем заняться в Галле</a> · <a href=\"/luxury-jungle-stay-sri-lanka/index.html\">Роскошный отдых в джунглях Шри-Ланки</a> · <a href=\"/honeymoon-hotel-galle/index.html\">Отель для медового месяца в Галле</a> · <a href=\"/best-time-to-visit-galle/index.html\">Лучшее время для поездки в Галле</a> · <a href=\"https://www.lonelyplanet.com/sri-lanka/galle\" target=\"_blank\" rel=\"noopener\">Galle на Lonely Planet</a> · <a href=\"https://www.srilanka.travel/\" target=\"_blank\" rel=\"noopener\">Туризм Шри-Ланки</a>"
         },
         editorial: {
           kicker: "The Jungle Loft Journal",
